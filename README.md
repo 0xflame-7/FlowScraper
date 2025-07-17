@@ -1,6 +1,6 @@
 # ScrapeFlow - Learning Build
 
-This repository is a personal, step-by-step implementation of the **ScrapeFlow** project from [Kliton Bare's tutorial](https://dub.sh/scrapeflow). The app is a full-stack SaaS platform for automating web scraping using a visual workflow builder powered by **React Flow**.
+This repository is a personal, step-by-step implementation of the **ScrapeFlow** project from [Kliton Bare's tutorial](https://youtu.be/RkwbGuL-dzo?si=UYK3IiZTqh47Dlkh). The app is a full-stack SaaS platform for automating web scraping using a visual workflow builder powered by **React Flow**.
 
 🔧 **Tech Stack**:
 
@@ -21,7 +21,7 @@ This project is for learning full-stack SaaS architecture with visual editors an
 - Making it production-ready
 
 💡 **Original Project**:  
-Built by following [ScrapeFlow by Kliton](https://github.com/kliton-yt/scrape-flow) — all credits to the original author. This version will evolve into a customized, feature-rich version over time.
+Built by following [ScrapeFlow by Kliton](https://dub.sh/scrapeflow) — all credits to the original author. This version will evolve into a customized, feature-rich version over time.
 
 ---
 
