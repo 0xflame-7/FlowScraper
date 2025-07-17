@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ScrapeFlow - Learning Build
 
-## Getting Started
+This repository is a personal, step-by-step implementation of the **ScrapeFlow** project from [Kliton Bare's tutorial](https://dub.sh/scrapeflow). The app is a full-stack SaaS platform for automating web scraping using a visual workflow builder powered by **React Flow**.
 
-First, run the development server:
+🔧 **Tech Stack**:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js** – Full-stack React framework
+- **TypeScript** – Strongly typed JavaScript
+- **React Flow** – Visual node-based flow editor
+- **Prisma** – ORM for PostgreSQL
+- **React Query** – Data fetching and caching
+- **Clerk** – Authentication
+- **Stripe** – Billing and subscriptions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📚 **Purpose**:
+This project is for learning full-stack SaaS architecture with visual editors and scraping automation. Future plans include:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Adding new task types
+- Integrating custom AI-powered data extraction
+- Designing my own workflow UI/UX
+- Making it production-ready
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+💡 **Original Project**:  
+Built by following [ScrapeFlow by Kliton](https://github.com/kliton-yt/scrape-flow) — all credits to the original author. This version will evolve into a customized, feature-rich version over time.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> ⚠️ Note: This repo currently mirrors the tutorial. Major changes will be documented in future milestones.
