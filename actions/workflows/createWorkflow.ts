@@ -1,9 +1,11 @@
 "use server";
 
+import prisma from "@/lib/prisma";
 import {
   createWorkflowSchema,
   createWorkflowSchemaType,
 } from "@/schema/workflow";
+import { WorkFlowStatus } from "@/types/workflow";
 import { auth } from "@clerk/nextjs/server";
 
 export async function CreateWorkflow(form: createWorkflowSchemaType) {
@@ -17,5 +19,18 @@ export async function CreateWorkflow(form: createWorkflowSchemaType) {
 
   if (!userId) {
     throw new Error("auth");
+  }
+
+  const result = await prisma.workflow.create({
+    data: {
+      userId,
+      status: WorkFlowStatus.DRAFT,
+      definition: "TODO",
+      description: data.description ?? null,
+      name: data.name,
+    },
+  });
+
+  if (!result) {
   }
 }
