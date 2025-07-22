@@ -16,7 +16,7 @@ import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 const routes = [
   {
-    href: "",
+    href: "/",
     label: "Home",
     icon: HomeIcon,
   },
@@ -39,10 +39,12 @@ const routes = [
 
 function DesktopSidebar() {
   const pathname = usePathname();
-  const activeRoute = routes.find(
-    (route) =>
-      (route.href.length > 0 && pathname.includes(route.href)) || routes[0]
-  );
+  const activeRoute =
+    routes.find((route) =>
+      route.href !== ""
+        ? pathname.startsWith(`/${route.href}`)
+        : pathname === "/"
+    ) || routes[0];
 
   return (
     <div className="hidden relative md:block min-w-[280px] max-w-[280px] h-screen overflow-hidden w-full bg-primary/5 dark:bg-secondary/30 dark:text-foreground text-muted-foreground border-r-2 border-separate">
@@ -75,10 +77,12 @@ export function MobileSidebar() {
   const [isOpen, setOpen] = useState(false);
 
   const pathname = usePathname();
-  const activeRoute = routes.find(
-    (route) =>
-      (route.href.length > 0 && pathname.includes(route.href)) || routes[0]
-  );
+  const activeRoute =
+    routes.find((route) =>
+      route.href !== ""
+        ? pathname.startsWith(`/${route.href}`)
+        : pathname === "/"
+    ) || routes[0];
 
   return (
     <div className="block border-separate bg-background md:hidden">
