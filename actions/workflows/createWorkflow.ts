@@ -7,6 +7,7 @@ import {
 } from "@/schema/workflow";
 import { WorkFlowStatus } from "@/types/workflow";
 import { auth } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 
 export async function CreateWorkflow(form: createWorkflowSchemaType) {
   const { success, data } = createWorkflowSchema.safeParse(form);
@@ -32,5 +33,8 @@ export async function CreateWorkflow(form: createWorkflowSchemaType) {
   });
 
   if (!result) {
+    throw new Error("failed to create workflow");
   }
+
+  redirect(`/workflow/editor/${result.id}`);
 }
