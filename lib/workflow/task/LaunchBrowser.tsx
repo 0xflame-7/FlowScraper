@@ -1,9 +1,9 @@
 import { Tasktype } from "@/types/task";
 import { GlobeIcon, LucideProps } from "lucide-react";
 
-export const LaunchBroswerTask = {
-  type: Tasktype.LAUNCH_BROSWER,
-  label: "Launch broswer",
+export const LaunchBrowserTask = {
+  type: Tasktype.LAUNCH_BROWSER,
+  label: "Launch browser",
   icon: (props: LucideProps) => (
     <GlobeIcon className="stroke-pink-400 {...props}" />
   ),

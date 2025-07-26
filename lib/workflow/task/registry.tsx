@@ -1,5 +1,5 @@
-import { LaunchBroswerTask } from "./LaunchBroswer";
+import { LaunchBrowserTask } from "./LaunchBrowser";
 
 export const TaskRegistry = {
-  LAUNCH_BROSWER: LaunchBroswerTask,
+  LAUNCH_BROWSER: LaunchBrowserTask,
 };

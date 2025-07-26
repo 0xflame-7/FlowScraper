@@ -21,7 +21,7 @@ const nodeTypes = {
 
 function FlowEditor({ workflow }: { workflow: Workflow }) {
   const [nodes, setNodes, onNodesChange] = useNodesState([
-    CreateFlowNode(Tasktype.LAUNCH_BROSWER),
+    CreateFlowNode(Tasktype.LAUNCH_BROWSER),
   ]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 
